@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="styel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="menu-logo">
+            <div id="menu" onclick="openMenuOpiton()"><i class='bx bx-menu'></i></div>
+            <div class="menuOption">
+                <button id="cross" onclick="closeMenuOption()">&Cross;</button>
+                <h2>MyPortfolio</h2>
+                <hr>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="logo">MyPortfolio</div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <div class="searbar">
+                    <input type="search" id="search" placeholder="Search.....">
+                    <button id="searchBtn" onclick="AddInput()"><i class='bx bx-search'></i></button>
+                </div>
+                <div class="route-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h1>Hi, I'm Madhaba</h1>
+        <p>Aspiring Web Developer</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About me</h2>
+        <p>I am a passionate developer learning web development. My goal is to buid innovative and user-friendly
+            application.</p>
+    </section>
+
+    <!-- Project section  -->
+    <section id="project" class="project">
+        <h2>Project</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>This is the website as my professional porfolio, showcasing my skill and experience in web
+                    development. It's designed to provide a clear and engaging overview of my project and abilities,
+                    demostrating my passion fo creating a ures-friendly interface.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>This portfolio is a reflection of my journey as a Web developer. It showcases my process, from
+                    initial concept to final execution, and highlighting my commitment t delivering high-quality work.
+                    My goal is to provide a seamles and informative experience for vsitors, allowing them to understand
+                    my skills and approach to Web developer. I'm passionate about web development and eager to
+                    collaborate on exciting new project</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact me</h2>
+        <p>brownmunda120@gmail.com</p>
+        <p>GitHup: gitHup.com/Brown Munda</p>
+    </section>
+
+    <script src="application.js"></script>
+</body>
+
+</html>

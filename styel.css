@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgb(79, 87, 230);
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+                              /* Menu Bar  */
+#menu{
+    display: none;
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+}
+
+.menuOption{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(31, 31, 31);
+    visibility: hidden;
+    opacity: 0;
+    width:0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .6s ease;
+}
+
+.close{
+    width: 250px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#cross{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    padding: 3px 8px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+hr{width:80% ; margin-top: 30px;}
+
+.menuOption h2{
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 50px;
+    color: rgb(212, 201, 232);
+    text-shadow: 0px 0px 9px rgb(0, 0, 0);
+}
+
+.menuOption ul{ width: 95%; margin-top: 20px; list-style: none;}
+
+.menuOption a{
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    display: flex;
+}
+.menuOption a:hover { background-color: black;}
+
+.logo{
+    color:white;
+    font-size: 24px;
+    font-weight: bold ;
+}
+                   /* Nav bar  */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.searbar {
+    display: flex;
+    background: none;
+    /* background-color: rgb(241, 145, 12); */
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.searbar input{
+    outline: none;
+    font-size: 12px;
+    width: 0px;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    transition: all .5s ease;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.searbar input.active{
+    padding: 5px 0px;
+    width:180px;
+    transition: all 0.5s ease ;
+}
+.searbar button.color{
+    background-color: rgb(241, 145, 12);
+}
+
+.searbar.color{
+    background-color: rgb(241, 145, 12);
+}
+
+.searbar button{
+    display: flex;
+    border: none;
+    padding: 3px 7px;
+    cursor: pointer;
+    background: none;
+    font-size: 23px;
+    color:white;
+    font-weight: 700;
+}
+
+   /* Route links */
+.route-link {
+    display: flex;
+    gap: 10px;
+    /* flex-direction: column; */
+}
+
+     /* Section  */
+section{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home{
+    /* max-width: 100%; */
+    /* width: 90%; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(potfolio2.jpg);
+    background-size: 100% 100%;
+    color: white;
+}
+
+.about, .project, .contact{
+    background: #f4f4f4;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0 , 0 ,0 , 0.1);
+}
+
+
+@media (max-width:425px) {
+    header {
+        width:100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .home {
+        height: 40vh;
+    }
+
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:768px) {
+    header{ max-width: 100%;}
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .home {
+        height: 60vh;
+    }
+
+    .route-link {
+        display: none;
+    }
+}
